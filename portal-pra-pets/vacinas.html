@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Vacinas - Pra Pets</title>
+  <link rel="stylesheet" href="agendamento.css">
+</head>
+<body>
+  <h1>Vacinas</h1>
+
+  <div class="main-content">
+    <div class="text-section">
+      <p>Mantenha a saúde do seu pet em dia com a vacinação. Agende com clínicas confiáveis e proteja quem você ama.</p>
+    </div>
+
+    <div class="form-section">
+      <h2>Agendar Vacinação</h2>
+
+      <div class="localizacao-box">
+        <button onclick="obterLocalizacao()">📍 Localizar Clínicas Próximas</button>
+        <div id="resultado"><p>Aguardando localização...</p></div>
+      </div>
+
+      <form action="#" method="post">
+        <label for="nome">Nome do Pet:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <button type="submit">Agendar</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const tipoServico = "vacinas";
+  </script>
+  <script src="js/geolocalizacao.js"></script>
+</body>
+</html>
+
+

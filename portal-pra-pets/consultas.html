@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Consultas - Pra Pets</title>
+  <link rel="stylesheet" href="agendamento.css">
+</head>
+<body>
+  <h1>Consultas Veterinárias</h1>
+
+  <div class="main-content">
+    <div class="text-section">
+      <p>Agende uma consulta veterinária e garanta o bem-estar do seu pet com atendimento especializado.</p>
+    </div>
+
+    <div class="form-section">
+      <h2>Agendar Consulta</h2>
+
+      <div class="localizacao-box">
+        <button onclick="obterLocalizacao()">📍 Localizar Clínicas Veterinárias</button>
+        <div id="resultado"><p>Aguardando localização...</p></div>
+      </div>
+
+      <form action="#" method="post">
+        <label for="nome">Nome do Pet:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <button type="submit">Agendar</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const tipoServico = "consultas";
+  </script>
+  <script src="js/geolocalizacao.js"></script>
+</body>
+</html>
+

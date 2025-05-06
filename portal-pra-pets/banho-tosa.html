@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Banho e Tosa - Pra Pets</title>
+  <link rel="stylesheet" href="agendamento.css">
+</head>
+<body>
+  <h1>Banho e Tosa</h1>
+
+  <div class="main-content">
+    <div class="text-section">
+      <p>Deixe seu pet sempre limpo e bem cuidado com nossos serviços de banho e tosa. Utilizamos produtos de qualidade e profissionais especializados.</p>
+    </div>
+
+    <div class="form-section">
+      <h2>Agendar Banho ou Tosa</h2>
+
+      <div class="localizacao-box">
+        <button onclick="obterLocalizacao()">📍 Localizar Pet Shops Próximos</button>
+        <div id="resultado"><p>Aguardando localização...</p></div>
+      </div>
+
+      <form action="#" method="post">
+        <label for="nome">Nome do Pet:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <button type="submit">Agendar</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const tipoServico = "banho"; // define o tipo de serviço para a geolocalização
+  </script>
+  <script src="js/geolocalizacao.js"></script>
+</body>
+</html>
+
+

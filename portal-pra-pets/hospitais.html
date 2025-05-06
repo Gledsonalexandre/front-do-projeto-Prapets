@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Hospitais Próximos - Pra Pets</title>
+  <link rel="stylesheet" href="agendamento.css">
+</head>
+<body>
+  <h1>Hospitais Veterinários</h1>
+
+  <div class="main-content">
+    <div class="text-section">
+      <p>Veja hospitais veterinários próximos para emergências e atendimentos completos ao seu pet.</p>
+    </div>
+
+    <div class="form-section">
+      <h2>Localizar Hospital</h2>
+
+      <div class="localizacao-box">
+        <button onclick="obterLocalizacao()">📍 Localizar Hospitais Próximos</button>
+        <div id="resultado"><p>Aguardando localização...</p></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tipoServico = "hospitais";
+  </script>
+  <script src="js/geolocalizacao.js"></script>
+</body>
+</html>

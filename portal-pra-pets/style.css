@@ -1,0 +1,206 @@
+
+html {
+  scroll-behavior: smooth;
+} 
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9fff9;
+}
+
+/* Seção com vídeo de fundo */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* altura total da tela */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* garante que o vídeo cubra a tela proporcionalmente */
+  z-index: -1;
+  filter: brightness(60%); /* escurece o vídeo para destacar o texto */
+}
+
+.info-pet {
+  color: white;
+  z-index: 1;
+  max-width: 90%;
+  padding: 20px;
+}
+
+.info-pet h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.sub-titulo {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.botoes-hero a button {
+  padding: 10px 30px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(34, 34, 34, 0.8);
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botoes-hero .cadastro {
+  background-color: white;
+    color: black;
+}
+
+.botoes-hero button:hover {
+  background-color: white;
+    color: black;
+}
+
+.texto-rodape {
+  color: white;
+  font-size: 18px;
+  margin-top: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* opcional: melhora a leitura */
+}
+
+.servicos {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background-color: #c0f0c0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.servicos h2 {
+  color: #2e7d32;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.servicos p {
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 700px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card h3 {
+  margin-top: 15px;
+  color: #43a047;
+  font-size: 1.5em;
+}
+
+.card a {
+  color: #fff;
+  background-color: #43a047;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+/* Rodapé bonito e organizado */
+.footer {
+  background: linear-gradient(135deg, #43a047, #fb8c00);
+  color: white;
+  padding: 30px 15px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.footer-logo {
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: white;
+}
+
